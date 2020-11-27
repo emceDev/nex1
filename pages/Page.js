@@ -1,10 +1,10 @@
-import { Chat } from "../components/Chat";
+// import { Chat } from "../components/Chat";
 
 function Page() {
 	return (
 		<div>
-			<Chat />
-			<Fetch />
+			xd
+			{/* <Chat /> */}
 		</div>
 	);
 }
