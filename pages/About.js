@@ -27,8 +27,8 @@ function About(props) {
 
 export const Post = (props) => {
 	return (
-		<div>
-			<Typography variant="h2">{props.x.title}</Typography>
+		<div className="Post">
+			<Typography variant="h3">{props.x.title}</Typography>
 			<Typography variant="body1">{props.x.description}</Typography>
 		</div>
 	);

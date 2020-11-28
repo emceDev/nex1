@@ -13,7 +13,7 @@ export const Navbar = () => {
 				<Toolbar>
 					<Language />
 					<Link href="/">
-						<Button variant="primary">
+						<Button>
 							<a>{lang ? "Główna" : "Home"}</a>
 						</Button>
 					</Link>
