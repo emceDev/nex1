@@ -7,8 +7,18 @@ export let theme = createMuiTheme({
 			main: "rgba(0, 27, 122, 0.84)",
 		},
 		secondary: {
-			main: "#ffffff",
+			main: "#F7F0F0",
 		},
+		background: {
+			paper: "red",
+		},
+	},
+	typography: {
+		fontFamily: "",
+		button: {
+			fontWeight: "bold",
+		},
+		body1: {},
 	},
 });
 theme = responsiveFontSizes(theme);

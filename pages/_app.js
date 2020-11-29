@@ -8,6 +8,7 @@ import "../styles/global.css";
 function MyApp({ Component, pageProps }) {
 	return (
 		<div className="App">
+			<div className="tinted-image"></div>
 			<RecoilRoot>
 				<ThemeProvider theme={theme}>
 					<Navbar />

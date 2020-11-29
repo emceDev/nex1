@@ -1,5 +1,13 @@
+.tinted-image {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: -100;
+	background: linear-gradient(rgba(122, 22, 70, 0.76), rgba(0, 26, 120, 0.719)),
+		url("../images/Uk.jpg");
+}
 .App {
-	background: linear-gradient(-8deg, #dc143c, transparent);
+	/* background-color: rgba(122, 22, 70, 0.507); */
 }
 .App * {
 	text-align: center;
@@ -25,6 +33,10 @@ body {
 	text-align: center;
 }
 .IndexBody {
+	border-radius: 0.4%;
+	padding: 2%;
+	background-color: rgba(0, 26, 120, 0.5);
+	color: white;
 }
 .Logo {
 	margin-top: 1vh;
@@ -48,6 +60,10 @@ body {
 	margin-top: 1vh;
 	margin-left: 5vw;
 	width: 85vw;
+	border-radius: 0.4%;
+	padding: 2%;
+	background-color: rgba(0, 26, 120, 0.5);
+	color: white;
 }
 .GIText {
 	margin: auto;
@@ -74,12 +90,33 @@ body {
 	min-height: 100vh;
 	margin: 5vh auto 0 auto;
 	width: 80vw;
+	border-radius: 0.4%;
+	padding: 2%;
+	background-color: rgba(0, 26, 120, 0.5);
+	color: white;
 }
 .Post {
 	margin-top: 5vh;
 }
 /* About END */
 
+/* Offer */
+.Offer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1vh;
+	margin-left: 5vw;
+	width: 85vw;
+	border-radius: 0.4%;
+	padding: 2%;
+	background-color: rgba(0, 26, 120, 0.5);
+	color: white;
+}
+.Offer * {
+	text-align: left;
+}
+/* OFFER EMD */
 .switch {
 	margin: auto;
 	position: absolute;
