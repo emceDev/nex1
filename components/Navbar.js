@@ -13,22 +13,22 @@ export const Navbar = () => {
 				<Toolbar>
 					<Language />
 					<Link href="/">
-						<Button>
+						<Button color="secondary">
 							<a>{lang ? "Główna" : "Home"}</a>
 						</Button>
 					</Link>
 					<Link href="/Gallery">
-						<Button variant="primary">
+						<Button color="secondary">
 							<a>{lang ? "Galeria" : "Gallery"}</a>
 						</Button>
 					</Link>
 					<Link href="/About">
-						<Button variant="primary">
+						<Button color="secondary">
 							<a>{lang ? "O nas" : "About us"}</a>
 						</Button>
 					</Link>
 					<Link href="/Offer">
-						<Button variant="primary">
+						<Button color="secondary">
 							<a>{lang ? "Oferta" : "Offer"}</a>
 						</Button>
 					</Link>

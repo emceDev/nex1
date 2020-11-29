@@ -1,10 +1,10 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { useState } from "react";
-import "../pages/global.css";
+// import "../pages/global.css";
 import { RecoilRoot } from "recoil";
 import { theme } from "../styles/mui";
 import { ThemeProvider } from "@material-ui/core";
+import "../styles/global.css";
 function MyApp({ Component, pageProps }) {
 	return (
 		<div className="App">
