@@ -209,7 +209,7 @@ body {
 }
 
 /* About START */
-.About {
+/* .About {
 	min-height: 100vh;
 	margin: 5vh auto 0 auto;
 	width: 80vw;
@@ -220,7 +220,62 @@ body {
 }
 .Post {
 	margin-top: 5vh;
+} */
+
+.About {
+	background-color: #f2fdff;
+	color: #f2fdff;
 }
+.AboutPost {
+	display: flex;
+	justify-content: center;
+	padding: 2vh 1vw 2vh 1vw;
+	min-height: 50vh;
+	margin: 5vh auto;
+	width: 89vw;
+	flex-direction: row;
+}
+.AboutPostCol1 {
+	width: 40vw;
+	display: flex;
+	flex-direction: column;
+}
+.AboutPostTitle {
+	background-color: #43aa8b;
+	z-index: 3;
+	width: max-content;
+	padding: 0.2vh 1vw 0.2vh 1vw;
+}
+.AboutPostDescription {
+	background-color: #235789;
+	width: 40vw;
+	height: 35vh;
+	padding: 1vh 1vw 2vh 1vw;
+	display: flex;
+	align-items: center;
+	z-index: 2;
+}
+.AboutPostImageContainer {
+	height: fit-content;
+	min-width: 36vw;
+}
+.AboutPostImageTint {
+	width: inherit;
+	height: inherit;
+	background-color: red;
+	z-index: 2;
+}
+.AboutPostImage {
+	background-color: lightskyblue;
+}
+
+.About div:nth-of-type(3n + 2) .AboutPostDescription {
+	transform: translate(2vw, 1vh);
+}
+.About div:nth-of-type(3n + 0) .AboutPostTitle {
+	transform: translate(2vw, 1vh);
+}
+
 /* About END */
 
 /* Offer */
