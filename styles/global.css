@@ -3,8 +3,8 @@
 	width: 100vw;
 	height: 100vh;
 	z-index: -100;
-	background: linear-gradient(rgba(122, 22, 70, 0.76), rgba(0, 26, 120, 0.719)),
-		url("../images/Uk.jpg");
+	/* background: linear-gradient(rgba(122, 22, 70, 0.76), rgba(0, 26, 120, 0.719)), */
+	/* url("../images/Uk.jpg"); */
 }
 .App {
 	/* background-color: rgba(122, 22, 70, 0.507); */
@@ -35,7 +35,7 @@ body {
 .IndexBody {
 	border-radius: 0.4%;
 	padding: 2%;
-	background-color: rgba(0, 26, 120, 0.5);
+	/* background-color: rgba(0, 26, 120, 0.5); */
 	color: white;
 }
 .Logo {
@@ -75,10 +75,92 @@ body {
 	/* color: blue; */
 }
 /* Gallery End */
+
+/* Sign Start */
+.SignQuoteImageContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90vw;
+	height: 50vh;
+	margin-left: 5vw;
+	margin-top: 5vw;
+}
+.SignQuoteContainer {
+	padding: 5vh 1vw 5vh 1vw;
+	background-color: #43aa8b;
+	color: #f2fdff;
+	font-weight: bold;
+	font-style: italic;
+	font-size: xx-large;
+	margin: 0 auto;
+	width: 40vw;
+	height: 10vw;
+	border-radius: 48px;
+	display: flex;
+	align-items: center;
+}
+.SignQuote {
+}
+.SignImage {
+	z-index: -40;
+	width: 40vw;
+	height: 100vh;
+	background: url("../images/signImage.jpg");
+	background-position: center;
+}
+.SignImageTint {
+	width: inherit;
+	height: inherit;
+	background-color: #fff7ff52;
+}
+
+.SignFormImageContainer {
+	min-height: 50vh;
+	margin-top: 15vh;
+	width: 97vw;
+	background-color: rgba(35, 87, 137, 0.57);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.SignFormImageContainerCol1 p {
+	color: #f2fdff;
+	font-weight: bold;
+	font-size: xx-large;
+}
+.SignInputContainer {
+	/* background-color: blue; */
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+	justify-content: space-evenly;
+}
+.SignInputContainer input {
+}
+.SignInputContainer input,
+::placeholder {
+	height: 4vh;
+	text-align: left;
+	background-color: #235789;
+	color: #f2fdff;
+	font-weight: bold;
+	border-radius: 10px;
+}
+.SignFormImage {
+	background-repeat: no-repeat;
+	width: 30vw;
+	height: 35vh;
+	background-image: url("../images/SignFormImg.png");
+}
+
+/* Sign End */
 /* Footer START */
 .Footer {
 	width: 100vw;
-	/* position: fixed; */
+	position: absolute;
 	margin-bottom: -50px;
 }
 .Footer :first-of-type(div) {

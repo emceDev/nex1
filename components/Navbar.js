@@ -27,6 +27,11 @@ export const Navbar = () => {
 							<a>{lang ? "O nas" : "About us"}</a>
 						</Button>
 					</Link>
+					<Link href="/Sign">
+						<Button color="secondary">
+							<a>{lang ? "Zapisz" : "Register"}</a>
+						</Button>
+					</Link>
 					<Link href="/Offer">
 						<Button color="secondary">
 							<a>{lang ? "Oferta" : "Offer"}</a>
