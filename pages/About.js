@@ -53,7 +53,7 @@ export const Post = (props) => {
 					id={2}
 					src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg"
 					width={500}
-					height={500}
+					height={200}
 					loader="cloudinary"
 				/>
 				<div style={{}} className="AboutPostImageTint"></div>
