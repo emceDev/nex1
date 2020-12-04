@@ -21,7 +21,10 @@ body {
 	position: sticky;
 	top: 0;
 	left: 0;
-	width: 90vw;
+	margin-top: 4vh;
+	margin-left: 2vw;
+	min-width: 50vw;
+	width: fit-content;
 	z-index: 100;
 }
 /* index START*/
@@ -32,11 +35,40 @@ body {
 	min-height: 100vh;
 	text-align: center;
 }
-.IndexBody {
-	border-radius: 0.4%;
-	padding: 2%;
-	/* background-color: rgba(0, 26, 120, 0.5); */
+.IndexLogo {
+	/* background-color: mediumseagreen; */
+	display: block;
+	width: 100vw;
+	height: 40vh;
+}
+.IndexLogoContainer {
+	z-index: -10;
+	background-color: purple;
+	background: url("https://res.cloudinary.com/m4t1ce/image/upload/v1607100669/School/Home/SHome_ak43yn.png");
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	width: 100vw;
+	height: 50vh;
+	top: 0;
+	left: 0;
+}
+.IndexAnimatedDiv {
+	background-color: rgb(102, 228, 0);
+}
+.IndexShortContent {
 	color: white;
+	margin-left: 20vw;
+	width: 60vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.IndexShortContentTitle {
+	background-color: rgb(0, 162, 255);
+}
+.IndexShortContentDescription {
+	background-color: rgb(255, 0, 242);
 }
 .Logo {
 	margin-top: 1vh;
@@ -44,7 +76,26 @@ body {
 	/* background-color: blue; */
 	width: 70vw;
 }
-
+@media only screen and (max-width: 650px) {
+	.IndexLogo {
+		width: 100vw;
+		height: 20vh;
+	}
+	.IndexLogoContainer {
+		font-size: x-small;
+		background-repeat: no-repeat;
+		width: 100vw;
+		height: 40vh;
+	}
+	.IndexShortContent .AboutPostDescription {
+		width: 80vw;
+		padding: 0%;
+	}
+	.IndexShortContent .AboutPostTitle {
+		width: fit-content;
+		margin-left: 5vw;
+	}
+}
 /* index END */
 /* Gallery Start */
 .Gallery {
