@@ -47,6 +47,7 @@ body {
 	background: url("https://res.cloudinary.com/m4t1ce/image/upload/v1607100669/School/Home/SHome_ak43yn.png");
 	background-position: center;
 	background-size: contain;
+	background-repeat: no-repeat;
 	position: absolute;
 	width: 100vw;
 	height: 50vh;
@@ -54,7 +55,49 @@ body {
 	left: 0;
 }
 .IndexAnimatedDiv {
-	background-color: rgb(102, 228, 0);
+	background-color: rgb(228, 0, 209);
+	display: flex;
+}
+.IndexAnimatedDiv div {
+	position: absolute;
+	height: 15vh;
+	width: 100vw;
+}
+.IndexAnimatedDiv .top {
+	clip-path: polygon(0 84%, 0 100%, 97% 100%);
+	left: 0vw;
+	top: 42vh;
+	animation: left-right 0.6s ease-in;
+	background-color: red;
+}
+.IndexAnimatedDiv .mid {
+	clip-path: polygon(100% 49%, 0 56%, 100% 60%);
+	top: 44vh;
+	background-color: green;
+	animation: right-left 1s ease-in;
+}
+.IndexAnimatedDiv .bottom {
+	clip-path: polygon(0 0, 0 15%, 75% 0);
+	background-color: blue;
+	animation: left-right 1.2s ease-in;
+	left: 0vw;
+	top: 50vh;
+}
+@keyframes right-left {
+	0% {
+		right: -100vw;
+	}
+	100% {
+		right: 0vw;
+	}
+}
+@keyframes left-right {
+	0% {
+		left: -100vw;
+	}
+	100% {
+		left: 0vw;
+	}
 }
 .IndexShortContent {
 	color: white;
@@ -64,12 +107,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 }
-.IndexShortContentTitle {
-	background-color: rgb(0, 162, 255);
-}
-.IndexShortContentDescription {
-	background-color: rgb(255, 0, 242);
-}
+
 .Logo {
 	margin-top: 1vh;
 	margin-left: 15vw;

@@ -25,7 +25,11 @@ const Index = () => {
 			<div className="IndexLogo">
 				<div className="IndexLogoContainer"></div>
 			</div>
-			<div className="IndexAnimatedDiv"></div>
+			<div className="IndexAnimatedDiv">
+				<div className="top"></div>
+				<div className="mid"></div>
+				<div className="bottom"></div>
+			</div>
 			<div className="IndexShortContent">
 				<div
 					style={{ alignSelf: "flex-start", marginBottom: "5vh" }}
