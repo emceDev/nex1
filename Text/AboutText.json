@@ -5,32 +5,32 @@
 			"id": "1",
 			"title": "ALL ABOUT THE LANGUAGE SCHOOL",
 			"description":"When you want to learn the language, memorizing is just not enough, and our founders, Michal and Katarzyna Suchozebrscy, know that perfectly well. They come from two separate countries: Katarzyna is Belarusian, and Michal is Polish, but different cultural background didn’t stop them from creating one of the best language schools in Warsaw — Together. Polish is a beautiful language, and to completely master it you need to love it like our founders do"
-		},
+		,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"},
 		{
 			"id": "2",
 			"title": "OUR MISSION",
 			"description":"No language center can operate without a mission, and we are not an exception: we work to help you make yourself at home in Poland. And, as it’s not possible without speaking Polish, we are your point of contact. But that’s not all that we provide you with: as a part of our mission, we lend you a hand in getting a study visa and filing the documents for Karta Pobytu (a Temporary Residence Permit). This way you can legally stay in Poland and feel safe."
-		},
+			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"},
 		{
 			"id": "3",
 			"title": "OUR PLANS",
 			"description":"In Together language school we work hard to give you the chance to study interesting and useful information in the way that works best for you. That’s why we experiment a lot, try different methods of teaching, and develop the individual approach we have been talking about. Besides, we have pretty ambitious plans for the nearest future."
-		},
+			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"},
 		{
 			"id": "4",
 			"title": "INTERNATIONAL RELATIONS",
 			"description":"It doesn’t matter where you have come from if you want to learn the language and get to know Poland, Together is the right place to go. We welcome everyone who loves studying and experiencing new emotions because living in a foreign country is really what this is all about. What’s more, joining our language center you will not only see the Polish culture as it is but also meet tons of new people from different countries. It means that you’ll be able to learn way much more than just the Polish language, and isn’t that just amazing?"
-		},
+			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"},
 		{
 			"id": "5",
 			"title": "OUR VALUES",
 			"description":"To be truly honest with you, at the very beginning of Together we didn’t think about making a list of values like all other companies did because we knew what we wanted to create and that was enough. But now, when our family has become “slightly” bigger, we’ve figured out that it’s necessary to show people on what principles our language center was built to make clear what you get after joining us."
-		},
+			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"},
 		{
 			"id": "6",
 			"title": "OUR VALUES",
 			"description":"To be truly honest with you, at the very beginning of Together we didn’t think about making a list of values like all other companies did because we knew what we wanted to create and that was enough. But now, when our family has become “slightly” bigger, we’ve figured out that it’s necessary to show people on what principles our language center was built to make clear what you get after joining us."
-		}]
+			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"}]
 },
 "pl":{
 	"Head": "O nas",

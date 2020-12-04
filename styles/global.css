@@ -209,19 +209,6 @@ body {
 }
 
 /* About START */
-/* .About {
-	min-height: 100vh;
-	margin: 5vh auto 0 auto;
-	width: 80vw;
-	border-radius: 0.4%;
-	padding: 2%;
-	background-color: rgba(0, 26, 120, 0.5);
-	color: white;
-}
-.Post {
-	margin-top: 5vh;
-} */
-
 .About {
 	background-color: #f2fdff;
 	color: #f2fdff;
@@ -242,7 +229,7 @@ body {
 }
 .AboutPostTitle {
 	background-color: #43aa8b;
-	z-index: 3;
+	z-index: 4;
 	width: max-content;
 	padding: 0.2vh 1vw 0.2vh 1vw;
 }
@@ -253,20 +240,21 @@ body {
 	padding: 1vh 1vw 2vh 1vw;
 	display: flex;
 	align-items: center;
-	z-index: 2;
+	z-index: 3;
 }
 .AboutPostImageContainer {
-	height: fit-content;
+	height: 52vh;
+	/* background-color: blue; */
 	min-width: 36vw;
+	max-width: 50vw;
+}
+.AboutPostImageContainer div {
+	/* background-color: rebeccapurple; */
+	height: 52vh;
 }
 .AboutPostImageTint {
-	width: inherit;
-	height: inherit;
-	background-color: red;
 	z-index: 2;
-}
-.AboutPostImage {
-	background-color: lightskyblue;
+	background-color: rgba(13, 232, 240, 0.438);
 }
 
 .About div:nth-of-type(3n + 2) .AboutPostDescription {

@@ -5,14 +5,16 @@ import text from "../Text/AboutText.json";
 import { useRecoilState } from "recoil";
 import { language } from "../state/atom";
 import Image from "next/image";
-function About(props) {
+import { vh, vw } from "../state/atom";
+
+function About({ json }) {
 	const [lang, setlang] = useRecoilState(language);
 	const [txt, settxt] = useState(text.eng);
+	const [w, setw] = useRecoilState(vw);
+	const [h, seth] = useRecoilState(vh);
 
 	useEffect(() => {
-		console.log(lang);
 		lang ? settxt(text.pl) : settxt(text.eng);
-		console.log(txt);
 	}, [lang]);
 	return (
 		<div className="About">
@@ -20,7 +22,7 @@ function About(props) {
 				<title>{txt.Head}</title>
 			</Head>
 			{txt.Posts.map((x) => {
-				return <Post x={x} />;
+				return <Post x={x} w={w} h={h} />;
 			})}
 		</div>
 	);
@@ -28,52 +30,39 @@ function About(props) {
 
 export const Post = (props) => {
 	return (
-		<div className="AboutPost">
+		<div className="AboutPost" key={props.x.id}>
 			<div className="AboutPostCol1">
 				<div className="AboutPostTitle">
-					<Typography variant="h3">Title</Typography>
+					<Typography variant="h3">{props.x.title}</Typography>
 				</div>
 				<div className="AboutPostDescription">
-					<Typography variant="body1">
-						Descriptoimn Descripto imnDesc riptoim nDescriptoimn DescriptoimnDe
-						scripto imnDescripto imnDescriptoimnDescrip toimnDescriptoimnDescrip
-						toimnDescrip toimnDescri ptoimn Descripto imnDescr iptoim
-						nDescriptoimn Descriptoimn Descripto imnDesc riptoim nDescriptoimn
-						DescriptoimnDe scripto imnDescripto imnDescriptoimnDescrip
-						toimnDescriptoimnDescrip toimnDescrip toimnDescri ptoimn Descripto
-						imnDescr iptoim nDescriptoimn
-					</Typography>
+					<Typography variant="body1">{props.x.description}</Typography>
 				</div>
 			</div>
 
 			<div className="AboutPostImageContainer">
 				<Image
 					className="AboutPostImage"
-					key={1}
 					id={2}
-					src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg"
-					width={500}
-					height={200}
+					src={props.x.src}
+					position="relative"
+					width={props.w / 4}
+					height={props.h / 3}
+					layout="responsive"
 					loader="cloudinary"
 				/>
-				<div style={{}} className="AboutPostImageTint"></div>
+				<div
+					style={{
+						height: "52vh",
+						maxWidth: "50vw",
+						position: "relative",
+						top: "-52vh",
+					}}
+					className="AboutPostImageTint"
+				></div>
 			</div>
 		</div>
 	);
 };
-
-// export async function getServerSideProps() {
-// 	const res = await cloudinary.api.resources_by_tag(["SAbout"], {
-// 		tags: true,
-// 		context: "true",
-// 		max_results: "3",
-// 	});
-// 	const json = JSON.stringify(res);
-// 	return {
-// 		props: {
-// 			json: json,
-// 		},
-// 	};
-// }
 
 export default About;

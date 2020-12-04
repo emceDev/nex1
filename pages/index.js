@@ -1,7 +1,21 @@
 import { Typography } from "@material-ui/core";
 import Head from "next/head";
 import Image from "next/image";
+import { useRecoilState } from "recoil";
+import { vw, vh } from "../state/atom";
+
 const Index = () => {
+	const [w, setw] = useRecoilState(vw);
+	const [h, seth] = useRecoilState(vh);
+	function setDimensions() {
+		console.log("setting");
+		let x = window.innerWidth;
+		let y = window.innerHeight;
+		setw(x);
+		seth(y);
+		console.log("set to " + x, "   ", y);
+	}
+
 	return (
 		<div className="Index">
 			<Head>
@@ -21,7 +35,9 @@ const Index = () => {
 					Learn language is best international school, where you can learn
 					languages
 				</Typography>
+				<p style={{ color: "black" }}>asdsd</p>
 			</div>
+			{setDimensions()}
 		</div>
 	);
 };
