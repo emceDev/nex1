@@ -8,6 +8,7 @@ export const Sign = () => {
 	function handleform(params) {}
 	return (
 		<div className="Sign">
+			<div className="Background"></div>
 			<div className="SignQuoteImageContainer">
 				<div className="SignQuoteContainer">
 					<div className="SignQuote">

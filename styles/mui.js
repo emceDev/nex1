@@ -13,12 +13,5 @@ export let theme = createMuiTheme({
 			paper: "red",
 		},
 	},
-	typography: {
-		fontFamily: "",
-		button: {
-			fontWeight: "bold",
-		},
-		body1: {},
-	},
 });
 theme = responsiveFontSizes(theme);

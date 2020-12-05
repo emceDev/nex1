@@ -14,6 +14,14 @@
 	margin: 0;
 	scrollbar-width: 0.2vw;
 }
+.Background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -100;
+	width: 100vw;
+	height: 100vh;
+}
 body {
 	margin: "0px";
 }
@@ -34,6 +42,7 @@ body {
 	width: 100vw;
 	min-height: 100vh;
 	text-align: center;
+	background-color: #33ca7e49;
 }
 .IndexLogo {
 	/* background-color: mediumseagreen; */
@@ -43,7 +52,6 @@ body {
 }
 .IndexLogoContainer {
 	z-index: -10;
-	background-color: purple;
 	background: url("https://res.cloudinary.com/m4t1ce/image/upload/v1607100669/School/Home/SHome_ak43yn.png");
 	background-position: center;
 	background-size: contain;
@@ -55,7 +63,6 @@ body {
 	left: 0;
 }
 .IndexAnimatedDiv {
-	background-color: rgb(228, 0, 209);
 	display: flex;
 }
 .IndexAnimatedDiv div {
@@ -137,35 +144,61 @@ body {
 /* index END */
 /* Gallery Start */
 .Gallery {
-	width: 90vw;
+	padding-top: 10vh;
+	width: 100vw;
 	min-height: 100vh;
 }
+.Gallery .Background {
+	background-color: #cfe1d8;
+}
 .Gallery :nth-child(odd) {
-	/* background-color: green; */
 	flex-direction: row-reverse;
 }
 .GalleryItem {
 	display: flex;
-	margin-top: 1vh;
+	align-items: center;
+	flex-direction: row;
+	margin-bottom: 10vh;
 	margin-left: 5vw;
 	width: 85vw;
 	border-radius: 0.4%;
-	padding: 2%;
-	background-color: rgba(0, 26, 120, 0.5);
 	color: white;
 }
+.GITextContainer {
+	z-index: 4;
+	animation: slideDown 2s;
+	transform: translateY(10vh);
+}
+@keyframes slideDown {
+	0% {
+		transform: translateY(0vh);
+	}
+	100% {
+		transform: translateY(10vh);
+	}
+}
+
 .GIText {
+	background-color: #259574;
+	position: relative;
+	padding: 2vw;
 	margin: auto;
-	max-width: 40vw;
+	max-width: 50vw;
 	text-align: center;
-	font-size: xx-large;
+	font-size: 2.1vw;
 	font-style: oblique;
-	font-weight: 900;
+	font-weight: 550;
 	/* color: blue; */
+}
+.GITextContainer {
+	/* padding-top: 30vh; */
 }
 /* Gallery End */
 
 /* Sign Start */
+.Sign .Background {
+	background-color: #4b4bb53f;
+}
 .SignQuoteImageContainer {
 	display: flex;
 	align-items: center;
