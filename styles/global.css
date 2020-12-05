@@ -154,6 +154,7 @@ body {
 .Gallery :nth-child(odd) {
 	flex-direction: row-reverse;
 }
+
 .GalleryItem {
 	display: flex;
 	align-items: center;
@@ -165,9 +166,17 @@ body {
 	color: white;
 }
 .GITextContainer {
+	padding: 1%;
 	z-index: 4;
+	width: 40vw;
 	animation: slideDown 2s;
 	transform: translateY(10vh);
+}
+.Gallery :nth-child(odd) .GITextContainer {
+	transform: translateX(5vw);
+}
+.Gallery :nth-child(even) .GITextContainer {
+	transform: translateX(-5vw);
 }
 @keyframes slideDown {
 	0% {
@@ -183,16 +192,16 @@ body {
 	position: relative;
 	padding: 2vw;
 	margin: auto;
-	max-width: 50vw;
 	text-align: center;
 	font-size: 2.1vw;
 	font-style: oblique;
 	font-weight: 550;
 	/* color: blue; */
 }
-.GITextContainer {
-	/* padding-top: 30vh; */
+.GalleryImage {
+	width: 50vw;
 }
+
 /* Gallery End */
 
 /* Sign Start */
