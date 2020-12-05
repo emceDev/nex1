@@ -7,6 +7,7 @@
 	/* url("../images/Uk.jpg"); */
 }
 .App {
+	overflow: hidden;
 	/* background-color: rgba(122, 22, 70, 0.507); */
 }
 .App * {
@@ -42,6 +43,8 @@ body {
 	width: 100vw;
 	min-height: 100vh;
 	text-align: center;
+}
+.Index .Background {
 	background-color: #33ca7e49;
 }
 .IndexLogo {
@@ -75,17 +78,17 @@ body {
 	left: 0vw;
 	top: 42vh;
 	animation: left-right 0.6s ease-in;
-	background-color: red;
+	background-color: #95b3be77;
 }
 .IndexAnimatedDiv .mid {
 	clip-path: polygon(100% 49%, 0 56%, 100% 60%);
 	top: 44vh;
-	background-color: green;
+	background-color: #90c9b677;
 	animation: right-left 1s ease-in;
 }
 .IndexAnimatedDiv .bottom {
 	clip-path: polygon(0 0, 0 15%, 75% 0);
-	background-color: blue;
+	background-color: #aec6c9be;
 	animation: left-right 1.2s ease-in;
 	left: 0vw;
 	top: 50vh;
@@ -283,6 +286,10 @@ body {
 .SignQuote {
 }
 .SignImage {
+	/* position: absolute; */
+	position: fixed;
+	/* top: 5vh; */
+	right: 5vw;
 	z-index: -40;
 	width: 40vw;
 	height: 100vh;
@@ -391,8 +398,10 @@ body {
 /* About START */
 .About {
 	width: 100vw;
-	background-color: #f2fdff;
 	color: #f2fdff;
+}
+.About .Background {
+	background-color: #f2fdff;
 }
 .AboutPost {
 	display: flex;
@@ -443,10 +452,21 @@ body {
 }
 
 .About div:nth-of-type(3n + 2) .AboutPostDescription {
+	animation: AboutDiv 2s;
 	transform: translate(2vw, 1vh);
 }
+
 .About div:nth-of-type(3n + 0) .AboutPostTitle {
+	animation: AboutDiv 2s;
 	transform: translate(2vw, 1vh);
+}
+@keyframes AboutDiv {
+	from {
+		transform: translate(0vw, 0vh);
+	}
+	to {
+		transform: translate(2vw, 1vh);
+	}
 }
 @media only screen and (max-width: 650px) {
 	.About {

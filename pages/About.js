@@ -18,6 +18,7 @@ function About({ json }) {
 	}, [lang]);
 	return (
 		<div className="About">
+			<div className="Background"></div>
 			<Head>
 				<title>{txt.Head}</title>
 			</Head>

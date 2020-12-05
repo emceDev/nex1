@@ -1,22 +1,33 @@
 import { Button, Input, Typography } from "@material-ui/core";
-import { useState } from "react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export const Sign = () => {
 	const [filled, setfilled] = useState(false);
 	const [button, setbutton] = useState(false);
-	function handleform(params) {}
+
+	const [scroll, setscroll] = useState("100");
+
+	useEffect(() => {
+		window.addEventListener("scroll", () => {
+			if (window.pageYOffset > scroll) {
+				setscroll(window.pageYOffset);
+			}
+		});
+	}, []);
 	return (
 		<div className="Sign">
+			<div className="SignImage" style={{ top: 300 - scroll + "px" }}>
+				<div className="SignImageTint"></div>
+			</div>
 			<div className="Background"></div>
 			<div className="SignQuoteImageContainer">
-				<div className="SignQuoteContainer">
+				<div
+					className="SignQuoteContainer"
+					style={{ transform: "translateY(" + scroll + "px)" }}
+				>
 					<div className="SignQuote">
 						We are the most competent to teach you english
 					</div>
-				</div>
-				<div className="SignImage">
-					<div className="SignImageTint"></div>
 				</div>
 			</div>
 			<div className="SignFormImageContainer">
