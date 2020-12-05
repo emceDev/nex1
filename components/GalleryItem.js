@@ -9,7 +9,6 @@ export default function GalleryItem(props) {
 	const [lang, setlang] = useRecoilState(language);
 	return (
 		<div className="GalleryItem">
-			<div className="Background"></div>
 			<div className="GIImageContainer">
 				<div className="GalleryImage">
 					<Image

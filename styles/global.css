@@ -148,7 +148,7 @@ body {
 	width: 100vw;
 	min-height: 100vh;
 }
-.Gallery .Background {
+.GalleryPage .Background {
 	background-color: #cfe1d8;
 }
 .Gallery :nth-child(odd) {
@@ -170,21 +170,12 @@ body {
 	z-index: 4;
 	width: 40vw;
 	animation: slideDown 2s;
-	transform: translateY(10vh);
-}
-.Gallery :nth-child(odd) .GITextContainer {
-	transform: translateX(5vw);
+	transform: translate(5vw, 10vh);
 }
 .Gallery :nth-child(even) .GITextContainer {
-	transform: translateX(-5vw);
-}
-@keyframes slideDown {
-	0% {
-		transform: translateY(0vh);
-	}
-	100% {
-		transform: translateY(10vh);
-	}
+	/* background-color: red; */
+	animation: slideUpLeft 2s;
+	transform: translate(-5vw, -10vh);
 }
 
 .GIText {
@@ -196,12 +187,70 @@ body {
 	font-size: 2.1vw;
 	font-style: oblique;
 	font-weight: 550;
-	/* color: blue; */
 }
 .GalleryImage {
 	width: 50vw;
 }
+@keyframes slideUpLeft {
+	0% {
+		transform: translate(0vh, 0vw);
+	}
+	100% {
+		transform: translate(-5vw, -10vh);
+	}
+}
+@keyframes slideDown {
+	0% {
+		transform: translate(0vh, 0vw);
+	}
+	100% {
+		transform: translate(5vw, 10vh);
+	}
+}
+@media only screen and (max-width: 650px) {
+	.Gallery {
+		width: 100vw;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.GalleryItem {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		min-height: 50vh;
+		width: 99vw;
+	}
+	.Gallery :nth-child(odd) {
+		flex-direction: column;
+	}
+	.GalleryImage {
+		width: 90vw;
+	}
 
+	.GITextContainer {
+		max-width: 98vw;
+		min-width: 70vw;
+		animation: slideUp 2s;
+		transform: translateY(-3vh);
+	}
+	.Gallery :nth-child(even) .GITextContainer {
+		animation: none;
+		transform: translateY(-3vh);
+	}
+	.GIText {
+		font-size: medium;
+	}
+	@keyframes slideUp {
+		0% {
+			transform: translateY(-0vh);
+		}
+		100% {
+			transform: translateY(-3vh);
+		}
+	}
+}
 /* Gallery End */
 
 /* Sign Start */
@@ -524,30 +573,7 @@ input:checked + .slider:before {
 	.App {
 		margin: 0%;
 	}
-	.Gallery {
-		width: 100vw;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.Gallery :nth-child(odd) {
-		flex-direction: column;
-	}
-	.GalleryImage {
-	}
-	.GalleryItem {
-		display: flex;
-		flex-direction: column;
-		margin-top: 1vh;
-		margin-left: 0vw;
-		min-height: 50vh;
-		width: 90vw;
-	}
-	.GIText {
-		max-width: 98vw;
-		font-size: xx-small;
-	}
+
 	.Navbar {
 		width: 95vw;
 	}

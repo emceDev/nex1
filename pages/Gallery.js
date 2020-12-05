@@ -12,10 +12,11 @@ function Gallery({ json }) {
 		setviewportH(window.innerHeight);
 	}, []);
 	return (
-		<div>
+		<div className="GalleryPage">
 			<Head>
 				<title>Gallery</title>
 			</Head>
+			<div className="Background"></div>
 			<div className="Gallery">
 				{JSON.parse(json).resources.map((x) => {
 					return <GalleryItem x={x} vw={viewportW} vh={viewportH} />;
