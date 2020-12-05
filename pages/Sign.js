@@ -1,18 +1,22 @@
 import { Button, Input, Typography } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
+import { useRecoilState } from "recoil";
+import { vw } from "../state/atom";
 
 export const Sign = () => {
 	const [filled, setfilled] = useState(false);
 	const [button, setbutton] = useState(false);
 
-	const [scroll, setscroll] = useState("100");
+	const [scroll, setscroll] = useState();
 
 	useEffect(() => {
-		window.addEventListener("scroll", () => {
-			if (window.pageYOffset > scroll) {
-				setscroll(window.pageYOffset);
-			}
-		});
+		if (vw > 650) {
+			window.addEventListener("scroll", () => {
+				if (window.pageYOffset > scroll) {
+					setscroll(window.pageYOffset);
+				}
+			});
+		}
 	}, []);
 	return (
 		<div className="Sign">

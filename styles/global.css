@@ -481,11 +481,26 @@ body {
 		max-width: 80vw;
 		margin-left: 10vw;
 		margin-bottom: 0.2vh;
+		transform: unset;
+		animation: unset;
+	}
+	.AboutPostCol1 {
+		width: 100vw;
 	}
 	.AboutPostDescription {
-		width: 99vw;
+		width: 90vw;
+		margin: auto;
 		height: fit-content;
 		min-height: 40vh;
+	}
+	.About div:nth-of-type(3n + 2) .AboutPostDescription {
+		transform: unset;
+		animation: unset;
+	}
+
+	.About div:nth-of-type(3n + 0) .AboutPostTitle {
+		transform: unset;
+		animation: unset;
 	}
 	.AboutPostImageContainer {
 		width: 100vw;
@@ -496,6 +511,9 @@ body {
 	}
 	.AboutPostImageTint {
 		min-width: 100vw;
+	}
+	.About * {
+		translate: unset;
 	}
 }
 /* About END */

@@ -9,18 +9,20 @@ const Index = () => {
 	const [w, setw] = useRecoilState(vw);
 	const [h, seth] = useRecoilState(vh);
 
-	const [scroll, setscroll] = useState("100");
+	const [scroll, setscroll] = useState(undefined);
 
 	useEffect(() => {
 		let x = window.innerWidth;
 		let y = window.innerHeight;
 		setw(x);
 		seth(y);
-		window.addEventListener("scroll", () => {
-			if (window.pageYOffset > scroll) {
-				setscroll(window.pageYOffset);
-			}
-		});
+		if (x > 650) {
+			window.addEventListener("scroll", () => {
+				if (window.pageYOffset > scroll) {
+					setscroll(window.pageYOffset);
+				}
+			});
+		}
 	}, []);
 
 	return (
