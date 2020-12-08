@@ -283,8 +283,7 @@ body {
 	display: flex;
 	align-items: center;
 }
-.SignQuote {
-}
+
 .SignImage {
 	/* position: absolute; */
 	position: fixed;
@@ -325,8 +324,7 @@ body {
 	width: 50vw;
 	justify-content: space-evenly;
 }
-.SignInputContainer input {
-}
+
 .SignInputContainer input,
 ::placeholder {
 	height: 4vh;
