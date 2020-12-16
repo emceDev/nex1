@@ -1,12 +1,10 @@
 import { Button, Input, Typography } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
-import { useRecoilState } from "recoil";
 import { vw } from "../state/atom";
 
 export const Sign = () => {
 	const [filled, setfilled] = useState(false);
 	const [button, setbutton] = useState(false);
-
 	const [scroll, setscroll] = useState();
 
 	useEffect(() => {
