@@ -5,7 +5,7 @@ import { RecoilRoot } from "recoil";
 import { theme } from "../styles/mui";
 import { ThemeProvider } from "@material-ui/core";
 import "../styles/global.css";
-
+// import cloudinary from "../config/cloudinary";
 function MyApp({ Component, pageProps }) {
 	return (
 		<div className="App">

@@ -1,4 +1,6 @@
-var firebaseConfig = {
+import firebase from "firebase";
+
+const firebaseConfig = {
 	apiKey: "AIzaSyA7YUDcXk7HGbKPKSl1uSsZE4r5N54eWXM",
 	authDomain: "school-d95f0.firebaseapp.com",
 	databaseURL: "https://school-d95f0-default-rtdb.firebaseio.com",
@@ -8,6 +10,6 @@ var firebaseConfig = {
 	appId: "1:1048632052903:web:f209b15985c3e857dd5f82",
 	measurementId: "G-1L0QDX6FMR",
 };
-
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+export const app = !firebase.apps.length
+	? firebase.initializeApp(firebaseConfig)
+	: firebase;

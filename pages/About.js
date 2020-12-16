@@ -1,10 +1,9 @@
-import { Typography } from "@material-ui/core";
+import { Post } from "../components/Post";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import text from "../Text/AboutText.json";
 import { useRecoilState } from "recoil";
 import { language } from "../state/atom";
-import Image from "next/image";
 import { vh, vw } from "../state/atom";
 
 function About({ json }) {
@@ -28,42 +27,5 @@ function About({ json }) {
 		</div>
 	);
 }
-
-export const Post = (props) => {
-	return (
-		<div className="AboutPost" key={props.x.id}>
-			<div className="AboutPostCol1">
-				<div className="AboutPostTitle">
-					<Typography variant="h3">{props.x.title}</Typography>
-				</div>
-				<div className="AboutPostDescription">
-					<Typography variant="body1">{props.x.description}</Typography>
-				</div>
-			</div>
-
-			<div className="AboutPostImageContainer">
-				<Image
-					className="AboutPostImage"
-					id={2}
-					src={props.x.src}
-					position="relative"
-					width={props.w / 4}
-					height={props.h / 3}
-					layout="responsive"
-					loader="cloudinary"
-				/>
-				<div
-					style={{
-						height: "52vh",
-						maxWidth: "50vw",
-						position: "relative",
-						top: "-52vh",
-					}}
-					className="AboutPostImageTint"
-				></div>
-			</div>
-		</div>
-	);
-};
 
 export default About;
