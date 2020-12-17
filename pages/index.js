@@ -3,27 +3,10 @@ import { Typography } from "@material-ui/core";
 import Head from "next/head";
 import Image from "next/image";
 import { useRecoilState } from "recoil";
-import { vw, vh } from "../state/atom";
+import { scroll } from "../state/atom";
 
 const Index = () => {
-	const [w, setw] = useRecoilState(vw);
-	const [h, seth] = useRecoilState(vh);
-
-	const [scroll, setscroll] = useState(undefined);
-
-	useEffect(() => {
-		let x = window.innerWidth;
-		let y = window.innerHeight;
-		setw(x);
-		seth(y);
-		if (x > 650) {
-			window.addEventListener("scroll", () => {
-				if (window.pageYOffset > scroll) {
-					setscroll(window.pageYOffset);
-				}
-			});
-		}
-	}, []);
+	const [sc, setscroll] = useRecoilState(scroll);
 
 	return (
 		<div className="Index">
@@ -32,7 +15,10 @@ const Index = () => {
 			</Head>
 			<div className="Background"></div>
 			<div className="IndexLogo">
-				<div className="IndexLogoContainer"></div>
+				<div
+					className="IndexLogoContainer"
+					style={{ transform: "translateY(" + sc * 0.2 + "px)" }}
+				></div>
 			</div>
 			<div className="IndexAnimatedDiv">
 				<div className="top"></div>
@@ -41,7 +27,7 @@ const Index = () => {
 			</div>
 			<div
 				className="IndexShortContent"
-				style={{ transform: "translateY(-" + scroll * 0.9 + "px)" }}
+				style={{ transform: "translateY(-" + sc * 0.5 + "px)" }}
 			>
 				<div
 					style={{ alignSelf: "flex-start", marginBottom: "5vh" }}

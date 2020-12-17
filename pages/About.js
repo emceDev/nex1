@@ -11,7 +11,6 @@ function About({ json }) {
 	const [txt, settxt] = useState(text.eng);
 	const [w, setw] = useRecoilState(vw);
 	const [h, seth] = useRecoilState(vh);
-
 	useEffect(() => {
 		lang ? settxt(text.pl) : settxt(text.eng);
 	}, [lang]);

@@ -59,7 +59,7 @@ body {
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	position: absolute;
+	position: fixed;
 	width: 100vw;
 	height: 50vh;
 	top: 0;
@@ -132,16 +132,17 @@ body {
 	.IndexLogoContainer {
 		font-size: x-small;
 		background-repeat: no-repeat;
+		background-size: cover;
 		width: 100vw;
-		height: 40vh;
 	}
 	.IndexShortContent .AboutPostDescription {
 		width: 80vw;
+		margin: 0vw;
 		padding: 0%;
 	}
 	.IndexShortContent .AboutPostTitle {
 		width: fit-content;
-		margin-left: 5vw;
+		margin-left: 0vw;
 	}
 }
 /* index END */
@@ -466,6 +467,7 @@ body {
 		transform: translate(2vw, 1vh);
 	}
 }
+
 @media only screen and (max-width: 650px) {
 	.About {
 		width: 100vw;
@@ -479,11 +481,13 @@ body {
 		max-width: 80vw;
 		margin-left: 10vw;
 		margin-bottom: 0.2vh;
+		opacity: 0.9;
 		transform: unset;
 		animation: unset;
 	}
 	.AboutPostCol1 {
 		width: 100vw;
+		order: 22;
 	}
 	.AboutPostDescription {
 		width: 90vw;
@@ -501,6 +505,8 @@ body {
 		animation: unset;
 	}
 	.AboutPostImageContainer {
+		transform: translateY(20%);
+		order: 1;
 		width: 100vw;
 		background-color: violet;
 	}

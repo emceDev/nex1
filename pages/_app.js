@@ -4,20 +4,23 @@ import { Footer } from "../components/Footer";
 import { RecoilRoot } from "recoil";
 import { theme } from "../styles/mui";
 import { ThemeProvider } from "@material-ui/core";
+import { ScrollHandler } from "../components/ScrollHandler";
 import "../styles/global.css";
-// import cloudinary from "../config/cloudinary";
+
 function MyApp({ Component, pageProps }) {
 	return (
-		<div className="App">
-			<div className="tinted-image"></div>
-			<RecoilRoot>
+		<RecoilRoot>
+			<ScrollHandler />
+			<div className="App">
+				<div className="tinted-image"></div>
+
 				<ThemeProvider theme={theme}>
 					<Navbar />
 					<Component {...pageProps} />
 				</ThemeProvider>
 				<Footer />
-			</RecoilRoot>
-		</div>
+			</div>
+		</RecoilRoot>
 	);
 }
 

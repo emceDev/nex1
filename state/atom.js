@@ -14,3 +14,8 @@ export const vw = atom({
 	key: "vw",
 	default: 1600,
 });
+
+export const scroll = atom({
+	key: "scroll",
+	default: 0,
+});
