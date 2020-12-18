@@ -21,9 +21,11 @@ const Index = () => {
 				></div>
 			</div>
 			<div className="IndexAnimatedDiv">
-				<div className="top"></div>
+				<div className="IndexAnimatedDivCol1">
+					<div className="top"></div>
+					<div className="bottom"></div>
+				</div>
 				<div className="mid"></div>
-				<div className="bottom"></div>
 			</div>
 			<div
 				className="IndexShortContent"
