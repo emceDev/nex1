@@ -25,7 +25,7 @@ function Gallery({ json }) {
 		</div>
 	);
 }
-export async function getServerSideProps() {
+export async function getStaticProps() {
 	const res = await cloudinary.api.resources_by_tag(["SGallery"], {
 		tags: true,
 		context: "true",
