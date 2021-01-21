@@ -9,36 +9,32 @@ export const Navbar = () => {
 
 	return (
 		<div className="Navbar">
-			<AppBar position="static">
-				<Toolbar>
-					<Language />
-					<Link href="/">
-						<Button color="secondary">
-							<a>{lang ? "Główna" : "Home"}</a>
-						</Button>
-					</Link>
-					<Link href="/Gallery">
-						<Button color="secondary">
-							<a>{lang ? "Galeria" : "Gallery"}</a>
-						</Button>
-					</Link>
-					<Link href="/About">
-						<Button color="secondary">
-							<a>{lang ? "O nas" : "About us"}</a>
-						</Button>
-					</Link>
-					<Link href="/Sign">
-						<Button color="secondary">
-							<a>{lang ? "Zapisz" : "Register"}</a>
-						</Button>
-					</Link>
-					<Link href="/Offer">
-						<Button color="secondary">
-							<a>{lang ? "Oferta" : "Offer"}</a>
-						</Button>
-					</Link>
-				</Toolbar>
-			</AppBar>
+			<Language />
+			<Link href="/">
+				<Button color="secondary">
+					<a>{lang ? "Główna" : "Home"}</a>
+				</Button>
+			</Link>
+			<Link href="/Gallery">
+				<Button color="secondary">
+					<a>{lang ? "Galeria" : "Gallery"}</a>
+				</Button>
+			</Link>
+			<Link href="/About">
+				<Button color="secondary">
+					<a>{lang ? "O nas" : "About us"}</a>
+				</Button>
+			</Link>
+			<Link href="/Sign">
+				<Button color="secondary">
+					<a>{lang ? "Zapisz" : "Register"}</a>
+				</Button>
+			</Link>
+			<Link href="/Offer">
+				<Button color="secondary">
+					<a>{lang ? "Oferta" : "Offer"}</a>
+				</Button>
+			</Link>
 		</div>
 	);
 };

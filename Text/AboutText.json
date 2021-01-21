@@ -10,27 +10,23 @@
 			"id": "2",
 			"title": "OUR MISSION",
 			"description":"No language center can operate without a mission, and we are not an exception: we work to help you make yourself at home in Poland. And, as it’s not possible without speaking Polish, we are your point of contact. But that’s not all that we provide you with: as a part of our mission, we lend you a hand in getting a study visa and filing the documents for Karta Pobytu (a Temporary Residence Permit). This way you can legally stay in Poland and feel safe."
-			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"},
+			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabou2_p55xkv.png"},
 		{
 			"id": "3",
 			"title": "OUR PLANS",
 			"description":"In Together language school we work hard to give you the chance to study interesting and useful information in the way that works best for you. That’s why we experiment a lot, try different methods of teaching, and develop the individual approach we have been talking about. Besides, we have pretty ambitious plans for the nearest future."
-			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"},
-		{
+			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083453/School/About/Sabout1_x4hj9v.png"},
+		{	
 			"id": "4",
 			"title": "INTERNATIONAL RELATIONS",
 			"description":"It doesn’t matter where you have come from if you want to learn the language and get to know Poland, Together is the right place to go. We welcome everyone who loves studying and experiencing new emotions because living in a foreign country is really what this is all about. What’s more, joining our language center you will not only see the Polish culture as it is but also meet tons of new people from different countries. It means that you’ll be able to learn way much more than just the Polish language, and isn’t that just amazing?"
-			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"},
+			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1611164384/School/About/about_swuj8z.webp"},
 		{
 			"id": "5",
 			"title": "OUR VALUES",
 			"description":"To be truly honest with you, at the very beginning of Together we didn’t think about making a list of values like all other companies did because we knew what we wanted to create and that was enough. But now, when our family has become “slightly” bigger, we’ve figured out that it’s necessary to show people on what principles our language center was built to make clear what you get after joining us."
-			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"},
-		{
-			"id": "6",
-			"title": "OUR VALUES",
-			"description":"To be truly honest with you, at the very beginning of Together we didn’t think about making a list of values like all other companies did because we knew what we wanted to create and that was enough. But now, when our family has become “slightly” bigger, we’ve figured out that it’s necessary to show people on what principles our language center was built to make clear what you get after joining us."
-			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"}]
+			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1611164387/School/About/about2_z0nzbq.jpg"}
+		]
 },
 "pl":{
 	"Head": "O nas",
@@ -39,5 +35,25 @@
 			"id": "1",
 			"title": "Wszystko o szkole",
 			"description":"Jeśli chcesz nauczyć się języka, zapamiętywanie nie wystarczy, a nasi założyciele Michał i Katarzyna Suchozebrscy wiedzą o tym doskonale. Pochodzą z dwóch różnych krajów: Katarzyna jest Białorusinem, a Michał jest Polakiem, ale odmienne tło kulturowe nie przeszkodziło im w stworzeniu jednej z najlepszych szkół językowych w Warszawie - Razem. Polski to piękny język i aby go w pełni opanować, trzeba go pokochać tak jak nasi założyciele"
-		}]}
-}
+			,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabout_nwbqha.png"
+},		{
+	"id": "2",
+	"title": "O SZKOLE",
+	"description":"Żadne centrum językowe nie może funkcjonować bez misji, a my nie jesteśmy wyjątkiem: pracujemy nad tym, abyś czuł się w Polsce jak u siebie w domu. A ponieważ nie jest to możliwe bez znajomości języka polskiego, jesteśmy dla Ciebie punktem kontaktowym. Ale to nie wszystko, co oferujemy: w ramach naszej misji pomagamy w uzyskaniu wizy studyjnej i wypełnieniu dokumentów na Kartę Pobytu (zezwolenie na pobyt czasowy). Czuj się bezpiecznie."
+	,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083467/School/About/Sabou2_p55xkv.png"
+},{
+	"id": "3",
+	"title": "NASZE PLANY",
+	"description":"W szkole językowej Together ciężko pracujemy, aby dać Ci szansę poznania ciekawych i przydatnych informacji w sposób, który najbardziej Ci odpowiada. Dlatego dużo eksperymentujemy, próbujemy różnych metod nauczania i rozwijamy indywidualne podejście, o którym mówiliśmy. Poza tym mamy dość ambitne plany na najbliższą przyszłość."
+	,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1607083453/School/About/Sabout1_x4hj9v.png"
+},{
+	"id": "4",
+	"title": "WIELONARODOWOŚĆ",
+	"description":"Nie ma znaczenia, skąd pochodzisz, jeśli chcesz nauczyć się języka i poznać Polskę. Razem to właściwe miejsce, do którego należy się udać. Zapraszamy wszystkich, którzy kochają studiować i doświadczać nowych emocji, ponieważ życie za granicą jest tym, o co w tym wszystkim chodzi. Co więcej, dołączając do naszego centrum językowego, nie tylko zobaczysz polską kulturę taką jaka jest, ale także poznasz mnóstwo nowych ludzi z różnych krajów. Oznacza to, że będziesz mógł nauczyć się znacznie więcej niż tylko języka polskiego i czy to nie jest po prostu niesamowite?"
+	,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1611164384/School/About/about_swuj8z.webp"
+},{
+	"id": "5",
+	"title": "WARTOŚCI",
+	"description":"Szczerze mówiąc, na samym początku „Together” nie myśleliśmy o tworzeniu listy wartości, tak jak robiły to wszystkie inne firmy, ponieważ wiedzieliśmy, co chcemy stworzyć i to wystarczyło. Ale teraz, kiedy nasza rodzina stała się „nieco” większa, doszliśmy do wniosku, że konieczne jest pokazanie ludziom, na jakich zasadach zostało zbudowane nasze centrum językowe, aby było jasne, co otrzymujesz po dołączeniu do nas."
+	,"src":"https://res.cloudinary.com/m4t1ce/image/upload/v1611164387/School/About/about2_z0nzbq.jpg"
+}]}}

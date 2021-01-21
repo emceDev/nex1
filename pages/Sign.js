@@ -1,12 +1,15 @@
 import { Button, Input, Typography } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { vw } from "../state/atom";
+import { useRecoilState } from "recoil";
+import { language } from "../state/atom";
 
 export const Sign = () => {
 	const [filled, setfilled] = useState(false);
 	const [button, setbutton] = useState(false);
 	const [scroll, setscroll] = useState();
 
+	const [lang, setlang] = useRecoilState(language);
 	useEffect(() => {
 		if (vw > 650) {
 			window.addEventListener("scroll", () => {
@@ -28,7 +31,11 @@ export const Sign = () => {
 					style={{ transform: "translateY(" + scroll + "px)" }}
 				>
 					<div className="SignQuote">
-						We are the most competent to teach you english
+						{lang ? (
+							<div>U nas angielskiego nauczysz sie najlepiej </div>
+						) : (
+							<div>We are the most competent to teach you english</div>
+						)}
 					</div>
 				</div>
 			</div>

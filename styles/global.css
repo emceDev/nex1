@@ -28,13 +28,19 @@ body {
 }
 .Navbar {
 	position: sticky;
+	display: flex;
+	flex-direction: row;
 	top: 0;
 	left: 0;
 	margin-top: 4vh;
 	margin-left: 2vw;
+	padding: 1% 0% 1% 0%;
 	min-width: 50vw;
-	width: fit-content;
+	width: 90vw;
 	z-index: 100;
+	background-color: #235789;
+}
+.Navbar div {
 }
 /* index START*/
 .Index {
@@ -275,6 +281,9 @@ body {
 .Sign .Background {
 	background-color: #4b4bb53f;
 }
+.SignQuote {
+	padding: 20%;
+}
 .SignQuoteImageContainer {
 	display: flex;
 	align-items: center;
@@ -360,6 +369,9 @@ body {
 	.Sign {
 		width: 100vw;
 	}
+	.SignQuote {
+		padding: 10%;
+	}
 	.SignQuoteImageContainer {
 		display: unset;
 		width: 100vw;
@@ -368,6 +380,8 @@ body {
 	.SignQuoteContainer {
 		position: relative;
 		margin-top: 10vh;
+		margin-left: 1vw;
+		margin-right: 1vw;
 		height: 20vh;
 		width: 90vw;
 	}
@@ -378,6 +392,9 @@ body {
 		width: 100vw;
 	}
 	.SignFormImageContainer {
+		padding-left: 1%;
+		padding-right: 1%;
+		margin-top: 1vh;
 		width: 100vw;
 		flex-direction: column;
 	}
@@ -394,7 +411,8 @@ body {
 	}
 	.SignInputContainer {
 		width: 90vw;
-		margin-left: 5vw;
+		margin-left: 2.5vw;
+		/* margin-right: 5vw;  */
 	}
 }
 /* Sign End */
@@ -549,6 +567,9 @@ body {
 	background-color: rgba(0, 26, 120, 0.5);
 	color: white;
 }
+.Offer .Background {
+	background-color: rgba(83, 0, 167, 0.315);
+}
 .Offer * {
 	text-align: left;
 }
@@ -631,8 +652,10 @@ input:checked + .slider:before {
 	}
 
 	.Navbar {
-		width: 95vw;
+		width: fit-content;
+		margin-left: 0%;
 	}
+
 	.switch {
 		width: 26px;
 		height: 13px;

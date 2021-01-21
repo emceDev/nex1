@@ -1,0 +1,10 @@
+{
+    "pl":{
+        "title":"Nasza oferta",
+        "list":[{"title":"Korepetycje","description":"Indywidualne korepetycje"},{"title":"Certyfikaty","description":"Certyfikaty z języków Angielski, Esperanto"},{"title":"Kursy","description":"kursy angielskiego przygotowujące do matury"}]
+    },
+    "eng":{
+        "title":"What we have to offer",
+        "list":[{"title":"Private lessons","description":"Private lessons for students needing it"},{"title":"Certificates","description":"Certificates in English, Esperanto"},{"title":"Courses","description":"English courses preparing for the Matura exam"}]
+    }
+}

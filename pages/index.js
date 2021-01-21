@@ -4,10 +4,12 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRecoilState } from "recoil";
 import { scroll } from "../state/atom";
+import { language } from "../state/atom";
 
 const Index = () => {
 	const [sc, setscroll] = useRecoilState(scroll);
 
+	const [lang, setlang] = useRecoilState(language);
 	return (
 		<div className="Index">
 			<Head>
@@ -38,10 +40,17 @@ const Index = () => {
 					<Typography variant="h2">Learn Language</Typography>
 				</div>
 				<div className="AboutPostDescription" style={{ padding: "10%" }}>
-					<Typography variant="body1">
-						Learn language is best international school, where you can learn
-						languages
-					</Typography>
+					{lang ? (
+						<Typography variant="body1">
+							Ucz się języka to najlepsza międzynarodowa szkoła, w której możesz
+							się uczyć się języka
+						</Typography>
+					) : (
+						<Typography variant="body1">
+							Learn language is best international school, where you can learn
+							languages
+						</Typography>
+					)}
 				</div>
 			</div>
 		</div>

@@ -13,7 +13,6 @@ function MyApp({ Component, pageProps }) {
 			<ScrollHandler />
 			<div className="App">
 				<div className="tinted-image"></div>
-
 				<ThemeProvider theme={theme}>
 					<Navbar />
 					<Component {...pageProps} />
