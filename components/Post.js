@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Typography } from "@material-ui/core";
-import { transform } from "typescript";
-import { useState } from "react";
+
 export const Post = (props) => {
 	return (
 		<div className="AboutPost" key={props.x.id}>

@@ -1,8 +1,8 @@
 export const Footer = () => {
 	return (
 		<div className="Footer">
-			<p>Email: Szkoła@xd.jpg</p>
-			<p>Telefon: 697123112</p>
+			<p>Email: LearnWithUs@gmail.com</p>
+			<p>Phone: 697123112</p>
 		</div>
 	);
 };
